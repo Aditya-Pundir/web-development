@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personality Detector</title>
+
+    <style>
+      body {
+        background: url("https://img.wallpapersafari.com/desktop/1920/1080/1/27/ixEZlm.png");
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+      }
+      .mainDiv {
+        background: transparent;
+        padding: 5rem;
+      }
+      h1 {
+        color: white;
+        margin-top: 1rem;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      label {
+        font-size: large;
+        color: white;
+        margin-left: 40%;
+      }
+      #buttonSubmit {
+        width: 100%;
+        max-width: 100%;
+        height: 2rem;
+        font-size: large;
+        background: #000;
+        color: cyan;
+        border-radius: 2rem;
+        border-color: cyan;
+        outline-color: cyan;
+      }
+      #img {
+        margin-top: 10rem;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .imgDiv {
+        background-color: rgba(0, 234, 255, 0.198);
+        width: 30rem;
+        margin-top: 12rem;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <h1>Enter your name and get your personality in an image form!</h1>
+      <label for="nameId">Enter your name here: </label>
+      <input type="text" id="nameId" /> <br />
+      <div class="imgDiv">
+        <img
+          src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg"
+          height="160px"
+          width="200px"
+          id="img"
+        />
+      </div>
+      <input type="submit" value="See" id="buttonSubmit" />
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#buttonSubmit").click(function () {
+          const name = $("#nameId").val();
+          alert(name);
+          $("#img").attr("src", `https://joeschmoe.io/api/v1/${name}`);
+        });
+      });
+    </script>
+  </body>
+</html>
