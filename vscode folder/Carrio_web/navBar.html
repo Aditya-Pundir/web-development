@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keyword"
+      content="porter, shifting, shift, porting, delivery, deliver, transport, carry, load, transportation, luggage"
+    />
+    <meta
+      name="description"
+      content="Want to transport your goods? We are here to do so, just pick up your phone and book a vehicle according to the size of your goods."
+    />
+    <meta name="author" content="Carrio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      #CarrioButton {
+        background: transparent;
+        border-radius: 0.3rem;
+        color: cyan;
+        border-color: cyan;
+        border: 2%;
+        font-size: larger;
+        cursor: pointer;
+        outline-color: cyan;
+      }
+      a {
+        margin-left: 0.3%;
+        margin-right: 0.3%;
+        color: cyan;
+      }
+      #navBar {
+        background-color: black;
+        padding: 1.03%;
+        display: flex;
+        min-height: 8vh;
+      }
+      .navButton:hover {
+        background-color: cyan;
+        color: #000;
+        transition: ease 0.5s;
+      }
+      .navButton {
+        font-size: large;
+        cursor: pointer;
+        background: transparent;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+        color: white;
+        border: none;
+        border-radius: 0.3rem;
+      }
+
+      #contactSubmit:hover,
+      #contactReset:hover,
+      #CarrioButton:hover {
+        background-color: cyan;
+        color: #000;
+        transition: ease 0.5s;
+      }
+      #navBar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .navLinks ul {
+        display: flex;
+      }
+      .navLinks li {
+        list-style: none;
+      }
+      .toggle-button {
+        position: absolute;
+        top: 4.5%;
+        cursor: pointer;
+        right: 2rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 21px;
+        width: 30px;
+      }
+      .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+      }
+      @media (max-width: 588px) {
+        .toggle-button {
+          display: flex;
+          margin-top: 1rem;
+        }
+        .navButton {
+          display: flex;
+        }
+        #CarrioButton {
+          margin-top: 18%;
+        }
+        #navBar {
+          display: flex;
+          flex-direction: column;
+          min-height: 8vh;
+        }
+        .navLinks {
+          display: none;
+        }
+        .navLinks ul {
+          flex-direction: column;
+        }
+        .active {
+          display: flex;
+        }
+      }
+      @media (max-width: 242px) {
+        #navBar {
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navBar">
+      <a href="http://carrio.in"
+        ><button id="CarrioButton" class="CarrioNavButton">Carrio</button></a
+      >
+      <div class="navLinks">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><button id="HomeButton" class="navButton">Home</button></a
+            >
+          </li>
+          <li>
+            <a href="services.html"
+              ><button id="ServicesButton" class="navButton">
+                Services
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="about.html"
+              ><button id="AboutButton" class="navButton">About</button></a
+            >
+          </li>
+          <li>
+            <a href="team.html"
+              ><button id="TeamButton" class="navButton">Our Team</button></a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><button id="ContactButton" class="navButton">
+                Contact Us
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="toggle-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+    <script src="nav.js"></script>
+  </body>
+</html>
