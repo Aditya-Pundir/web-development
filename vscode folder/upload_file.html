@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload File</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #002f45;
+        color: white;
+      }
+      label {
+        font-size: xx-large;
+        font-family: "Open Sans", sans-serif;
+      }
+      input[type="file"] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" id="myFile" accept="image/*" />
+    <label for="myFile">Upload image</label>
+    <!-- I have written this image/* as I wanted to accept only images. -->
+  </body>
+</html>
