@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(37, 37, 37);
+}
+#speechToText {
+  font-family: "Poppins", "Roboto", sans-serif;
+  color: white;
+}
+#languageSelector {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 2rem;
+  cursor: pointer;
+  height: 2rem;
+  max-height: 2rem;
+}
+#mainButton {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+  max-height: 2rem;
+}
+#endButton {
+  width: 100%;
+  max-width: 100%;
+  height: 2rem;
+  max-height: 2rem;
+  cursor: pointer;
+  display: none;
+}
