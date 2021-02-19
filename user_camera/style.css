@@ -1,0 +1,9 @@
+#video {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 100vw;
+  height: 90vh;
+}
+body {
+  overflow: hidden;
+}
