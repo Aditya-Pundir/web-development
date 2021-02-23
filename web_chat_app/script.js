@@ -30,14 +30,20 @@ firebase
   .ref("data")
   .on("child_added", function (snapshot) {
     let html = "";
-    html += `<li id="message-${snapshot.key}">`;
+    html += `<li id="message-${snapshot.key}"`;
     // Showing the delete button if the message is sent by me
     if (snapshot.val().Sender == username) {
-      html += `<button id="deleteButton" data-id=${snapshot.key} onclick="deleteMessage(this)">`;
+      html += ` class="userMessage">`;
+      html += `<button data-id=${snapshot.key} onclick="deleteMessage(this)" class="deleteButton">`;
       html += "Delete";
       html += "</button>";
-    }
-    html += snapshot.val().Sender + ": " + snapshot.val().message;
+    } else html += ` class="otherMessages">`;
+    html +=
+      "<strong>" +
+      snapshot.val().Sender +
+      "</strong>" +
+      ": " +
+      snapshot.val().message;
     html += "</li>";
 
     document.getElementById("messagesInterface").innerHTML += html;
