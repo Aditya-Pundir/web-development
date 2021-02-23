@@ -1,7 +1,71 @@
-#deleteButton {
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("bg_image.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.messagesContainer {
+  max-height: 93vh;
+  overflow: auto;
+}
+.deleteButton {
   background-color: red;
   color: white;
   border-radius: 0.2rem;
   border: none;
   margin-right: 0.2rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+form {
+  margin-top: 0.5rem;
+}
+#sendButton {
+  background: rgb(17, 129, 27);
+  color: white;
+  height: 2.4rem;
+  cursor: pointer;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-left: -0.25rem;
+  width: 9%;
+}
+#message {
+  border: none;
+  margin-left: 0.3rem;
+  padding: 0.2rem;
+  height: 2rem;
+  width: 90%;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  margin: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.userMessage {
+  background-color: rgb(120, 231, 120);
+  margin-left: 40rem;
+  width: fit-content;
+  max-width: 50rem;
+  padding: 0.5%;
+  border-radius: 0.5rem;
+  float: right;
+  margin-right: 0.5rem;
+  clear: both;
+}
+.otherMessages {
+  clear: both;
+  background-color: rgb(226, 226, 226);
+  margin-left: 0.5rem;
+  width: fit-content;
+  max-width: 50rem;
+  padding: 0.5%;
+  border-radius: 0.5rem;
+  float: left;
 }
