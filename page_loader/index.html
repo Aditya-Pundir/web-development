@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page loader</title>
+    <script src="script.js" defer></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .loader {
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        height: 100vh;
+        background: white url("loading.gif") no-repeat center;
+      }
+      .center {
+        display: block;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        z-index: 99999;
+        background: rgb(27, 159, 192);
+      }
+    </style>
+  </head>
+  <body onload="loaded()">
+    <div class="loader"></div>
+    <div class="center">
+      <h1 class="text">This me! and what about you?</h1>
+    </div>
+  </body>
+</html>
