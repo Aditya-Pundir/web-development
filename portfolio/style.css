@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  background: linear-gradient(to bottom left, #00ffff, #002f45);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container {
+  padding: 2%;
+  width: 70%;
+  background-color: white;
+  box-shadow: 1rem 1rem 3rem 0.5rem rgba(44, 44, 44, 0.774);
+  border-radius: 1rem;
+  max-height: 60vh;
+  scroll-behavior: auto;
+  margin: auto;
+  margin-top: 7%;
+  overflow: scroll;
+}
+#mainImg {
+  width: 15rem;
+  float: right;
+  box-shadow: 1rem 1rem 2rem 0.5rem rgba(44, 44, 44, 0.774);
+  clear: both;
+  margin-top: -6.5rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+#contact {
+  background: #000;
+  box-shadow: 0.3rem 0.3rem 2rem 0.2rem rgba(44, 44, 44, 0.774);
+  border: none;
+  width: 8rem;
+  min-height: 2rem;
+  border-radius: 0.4rem;
+}
+#contactIcon {
+  color: white;
+}
+#contactText {
+  font-family: "Montserrat", sans-serif;
+}
+#myName {
+  clear: both;
+  margin-top: 3rem;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+}
+.work {
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.aboutMe {
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1rem;
+}
