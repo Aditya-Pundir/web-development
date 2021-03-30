@@ -1,0 +1,9 @@
+#userImage {
+  height: 60vh;
+  width: 55vw;
+  float: left;
+}
+#fileInput {
+  padding: 3rem;
+  background-color: rgb(58, 130, 158);
+}
