@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editor</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="database.js" defer></script>
     <script src="script.js" defer></script>
+
+    <!-- Firebase: -->
+    <!-- <script src="database.js" defer></script> -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script> -->
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script> -->
   </head>
   <body>
     <img
       src="https://i.pinimg.com/originals/23/2b/1b/232b1b043b574a87188f2457eb5a6f7d.jpg"
       id="userImage"
     />
+    <img src="" id="downloadableImage" />
+    <a href="" id="downloadLink" download="image">download</a>
     <input type="file" id="fileInput" draggable="true" />
     <h3>Brightness</h3>
     <input
