@@ -1,6 +1,8 @@
 var image = document.getElementById("userImage");
 var controls = document.querySelectorAll("input[type=range]");
 var userFile = document.getElementById("fileInput");
+var downloadableImage = document.getElementById("downloadableImage");
+var downloadLink = document.getElementById("downloadLink");
 
 function applyFilter() {
   var computedFilters = "";
@@ -13,7 +15,7 @@ function applyFilter() {
       ") ";
   });
   image.style.filter = computedFilters;
-  console.log(computedFilters);
+  downloadableImage.style.filter = computedFilters;
 }
 
 userFile.addEventListener("change", function () {
@@ -22,19 +24,11 @@ userFile.addEventListener("change", function () {
   reader.addEventListener("load", () => {
     localStorage.setItem("userImage", reader.result);
     image.setAttribute("src", localStorage.getItem("userImage"));
+    downloadableImage.setAttribute("src", reader.result);
+    downloadLink.setAttribute("href", localStorage.getItem("userImage"));
   });
-  //   userFile.addEventListener("drop", () => {
-  //     localStorage.setItem("userImage", reader.result);
-  //   });
-
   reader.readAsDataURL(this.files[0]);
 });
 
-// controls.forEach((element) => {
-//   element.addEventListener("change", function () {
-//     image.setAttribute("src", localStorage.getItem("userImage"));
-//   });
-// });
-// userFile.addEventListener("drop", function () {
-//   image.setAttribute("src", localStorage.getItem("userImage"));
-// });
+// function download() {}
+// download();
