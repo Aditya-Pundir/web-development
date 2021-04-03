@@ -20,6 +20,7 @@ body {
 #addJoke {
   width: 72vw;
   font-size: medium;
+  outline: none;
   border: none;
   text-align: center;
   margin: auto;
