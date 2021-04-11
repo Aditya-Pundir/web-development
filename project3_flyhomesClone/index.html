@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyHomes Clone</title>
+
+    <script src="script.js" defer></script>
+    <script src="database.js" defer></script>
+
+    <!-- Google Maps: -->
+    <!-- <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-zChCUWjQmhNHPoRNgN-z2Foo7S7i5Is&callback=initMap"
+    ></script> -->
+    <!-- AIzaSyAVuvTVtyDuIZ-Yb8wBdoewCM0hpidGCVk -->
+
+    <!-- MapBox Maps: -->
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
+      defer
+    ></script>
+    <script src="mapbox.js" defer></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="sellBtn">Sell</button>
+    <button id="buyBtn">Buy</button>
+
+    <div id="map"></div>
+    <video id="video"></video>
+  </body>
+</html>
