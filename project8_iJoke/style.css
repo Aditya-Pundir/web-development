@@ -1,0 +1,59 @@
+body {
+  background: linear-gradient(to top right, rgb(115, 0, 138), rgb(119, 0, 255));
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  box-shadow: -5px -5px 10px rgb(0, 255, 255), 5px 5px 5px rgb(98, 153, 160);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  background-color: rgba(16, 48, 82, 0.5);
+  color: white;
+  scroll-behavior: auto;
+  height: 70vh;
+  width: 70vw;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1%;
+  overflow-y: scroll;
+}
+#addJoke {
+  width: 72vw;
+  font-size: medium;
+  background-color: cyan;
+  outline: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  padding: 0.6%;
+}
+.list {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+  list-style: none;
+}
+.titleContainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 225, 255);
+  padding-top: 2rem;
+  margin: auto;
+  display: flex;
+  height: 2rem;
+  text-align: center;
+}
+#logo {
+  height: 3rem;
+  width: 3.7rem;
+  margin: auto;
+  display: block;
+  margin-top: -0.2rem;
+}
