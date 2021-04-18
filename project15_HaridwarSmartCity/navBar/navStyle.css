@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background: rgb(25, 25, 73);
+}
+.nav-links {
+  display: flex;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+li {
+  list-style-type: none;
+}
