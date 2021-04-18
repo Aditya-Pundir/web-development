@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://ak.picdn.net/shutterstock/videos/1028136896/thumb/1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+.imageContainer {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("https://ak.picdn.net/shutterstock/videos/1028136896/thumb/1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.mainContainer {
+  opacity: 0.7;
+  padding: 2%;
+  font-family: "Lato", sans-serif;
+  background-color: rgb(235, 233, 233);
+}
+.settingsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+#languageSelection,
+#category {
+  width: 22vw;
+  height: 2rem;
+  border-radius: 0.4rem;
+  background-color: rgb(150, 149, 149);
+  outline: none;
+  cursor: pointer;
+}
+#seeNews {
+  width: 100%;
+  cursor: pointer;
+  height: 2rem;
+  margin-top: 1rem;
+  background-color: rgb(150, 149, 149);
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+}
+#haridwarNewsHeading,
+#indianNewsHeading {
+  letter-spacing: 0.3rem;
+  margin-top: 2rem;
+}
+.haridwarNewsContainer,
+.indianNewsContainer {
+  background-color: rgb(235, 233, 233);
+}
