@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jokesApp.js"></script>
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="jokesStyle.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $.get("navBar.html", function (data) {
+        $("#nav").html(data);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div class="jokesContainer">
+      <ul id="jokesList"></ul>
+    </div>
+  </body>
+</html>
