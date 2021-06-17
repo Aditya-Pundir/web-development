@@ -1,0 +1,15 @@
+.fileDropper {
+  width: 60vw;
+  height: 70vh;
+  background: linear-gradient(45deg, rgb(226, 226, 226), #123456);
+}
+.over {
+  border: 2px dashed black;
+}
+.img {
+  width: 60vw;
+  height: 70vh;
+}
+#file {
+  display: none;
+}
