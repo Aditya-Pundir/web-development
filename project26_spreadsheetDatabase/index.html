@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spreadsheet Database</title>
+  </head>
+  <body>
+    <div id="mainDiv"></div>
+    <script>
+      let mainDiv = document.getElementById("mainDiv");
+      fetch(
+        "https://spreadsheets.google.com/feeds/cells/1uMLx1YDP9yuuOxHdQS73-lrZPqwO8Ai9tgVoKcvTKN8/od6/public/basic?alt=json"
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data.feed.entry);
+          let entireData = data.feed.entry;
+          entireData.map((element) => {
+            mainDiv.innerHTML += `
+            <span>${element.title.$t} : ${element.content.$t}</span> <br/>
+          `;
+          });
+        });
+    </script>
+  </body>
+</html>
