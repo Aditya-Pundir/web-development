@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("./images/wallpaper.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+.taskApp {
+  height: 60%;
+  width: 3%;
+}
+.homeImg {
+  margin: 1%;
+  height: 3%;
+  width: 3%;
+}
+.taskbar {
+  display: flex;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 7vh;
+  background-color: #e7e7e7;
+}
+.explorerWindow {
+  position: absolute;
+  left: 15%;
+  top: 95%;
+  width: 60%;
+  height: 50vh;
+  align-items: center;
+  transition: all 1s ease;
+}
+#explorer {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+#logoBtn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+#logo {
+  margin-top: -0.8vh;
+  margin-right: 1vw;
+  height: 5vh;
+  width: 4vw;
+}
+#faceTime {
+  margin-left: -1vw;
+  margin-top: -0.5vh;
+  height: 6vh;
+  width: 4vw;
+}
+#fileExplorer {
+  margin-left: -1vw;
+  margin-top: -1vh;
+  height: 5vh;
+  width: 4vw;
+}
+#netflix {
+  margin-left: -1vw;
+  margin-top: 1vh;
+  height: 8vh;
+  width: 5vw;
+}
+#oneNote {
+  margin-left: -1vw;
+  margin-top: 1.5vh;
+  height: 8vh;
+  width: 5vw;
+}
+#snippingTool {
+  margin-left: -2vw;
+  margin-top: 1vh;
+  height: 8vh;
+  width: 5vw;
+}
+#spotify {
+  margin-top: 1.5vh;
+  margin-left: -2vw;
+  height: 8vh;
+  width: 5vw;
+}
+#startMenu {
+  position: absolute;
+  left: 30%;
+  bottom: -76%;
+  border-radius: 1%;
+  height: 80vh;
+  width: 40vw;
+  transition: all 1s ease;
+}
+
+#notepad {
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+#startupSound {
+  visibility: hidden;
+  position: absolute;
+}
+.notepad {
+  position: absolute;
+  left: 21%;
+  top: 95%;
+  width: 60%;
+  height: 50vh;
+  align-items: center;
+  transition: all 1s ease;
+}
+#edge {
+  margin-left: 0.5%;
+  height: 4%;
+  width: 4%;
+}
+#note {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
+  padding: 2%;
+  resize: none;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+}
+a,
+button {
+  cursor: pointer;
+}
