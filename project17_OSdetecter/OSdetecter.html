@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #name {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="name">OS: &nbsp;</h3>
+    <script>
+      var os = navigator.appVersion;
+      var OSname;
+      if (os.indexOf("mac" !== -1)) OSname = "MacOS";
+      else if (os.indexOf("win" !== -1)) OSname = "Windows";
+      else if (os.indexOf("X11" !== -1)) OSname = "Unix";
+      else if (os.indexOf("Linux" !== -1)) OSname = "Linux";
+      else OSname = "Unknown OS";
+      document.getElementById("name").innerText += OSname;
+    </script>
+  </body>
+</html>
